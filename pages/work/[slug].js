@@ -23,6 +23,7 @@ const workQuery = `
 `
 
 export default function Work({ data }) {
+  if (!data) return <div>Loading...</div>
   const { work } = data
   return (
     <div>
@@ -95,7 +96,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { slug } = params;
-  const work = await sanityClient.fetch(workQuery, { slug });
+  const work = await sanityClient.fetch(workQuery, {slug: params?.slug,});
+  if(!work) {
+    return { 
+      notFound: true,
+    }
+  }
   return { props: { data: { work } } };
 }
