@@ -5,7 +5,7 @@ function About() {
   return (
     <div id="about" className="max-w-6xl mx-auto my-10 p-5 items-center lg:flex lg:justify-between">
         <div className="hidden lg:flex mr-20">
-            <img src="/about.png" className="w-full" />
+            <img src="/about.png" className="w-full" alt="My Image"/>
         </div>
         <div className="items-center justify-center lg:flex-1">
             <h2 className="mb-2 lg:mb-4 text-center text-xl lg:text-3xl font-bold text-gray-700">About Me 💁</h2>

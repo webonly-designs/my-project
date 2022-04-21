@@ -8,7 +8,7 @@ function Hero() {
         <div className="text-center lg:text-left p-5">
 
             <div className="flex space-x-2 mb-3 lg:mb-4 items-center justify-center">
-                <p className="text-2xl lg:text-5xl font-extrabold text-gray-700">👋 Hello, I'm</p>
+                <p className="text-2xl lg:text-5xl font-extrabold text-gray-700">👋 Hello, I am</p>
                 <h1 className="text-2xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-700 to-purple-400">Akshay</h1>
             </div>
             <p className="mb-1 lg:mb-2 lg:text-xl text-gray-600 font-semibold">Front-End Developer ➕ Freelancer 👨‍💻</p>

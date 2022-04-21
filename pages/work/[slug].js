@@ -16,6 +16,7 @@ const workQuery = `
     imgUrl,
     tag, 
     techImages[]{
+      _key,
       asset->{url},
     }
   }
@@ -56,6 +57,7 @@ export default function Work({ data }) {
                 {
                   work.techImages.map(imgObj => (
                       <img 
+                        key={imgObj._key}
                         className="w-7 object-cover rounded-lg"
                         src={imgObj.asset.url}
                         alt="img"
