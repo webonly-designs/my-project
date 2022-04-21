@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { sanityClient, urlFor } from "../../lib/Sanity";
+import { sanityClient, urlFor } from "../../lib/sanity";
 import PortableText from "@sanity/block-content-to-react"
 import Nav from "../../components/Nav"
 import Contact from "../../components/Contact"
