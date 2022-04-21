@@ -54,13 +54,13 @@ export default function Work({ data }) {
             <h3 className='font-semibold text-gray-700 mt-4 mb-1 text-lg md:text-xl'>Tech Stack 💻 </h3>
             <div className="flex space-x-2 mb-2">
                 {
-                work.techImages.map(imgObj => (
-                    <img 
-                    className="w-7 object-cover rounded-lg"
-                    src={imgObj.asset.url}
-                    alt="img"
-                    />
-                ))
+                  work.techImages.map(imgObj => (
+                      <img 
+                        className="w-7 object-cover rounded-lg"
+                        src={imgObj.asset.url}
+                        alt="img"
+                      />
+                  ))
                 }
             </div>
             <div className="mt-4 mb-2">

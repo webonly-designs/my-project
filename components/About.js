@@ -10,7 +10,7 @@ function About() {
         <div className="items-center justify-center lg:flex-1">
             <h2 className="mb-2 lg:mb-4 text-center text-xl lg:text-3xl font-bold text-gray-700">About Me 💁</h2>
             <p className="mb-2 lg:mb-3 text-center text-gray-600 text-sm md:text-base">
-                Hello! My name is Akshay, I'm graduate from The University of Manitoba with a Bachelor in Computer Sicence. 
+                Hello! My name is Akshay, I am graduate from The University of Manitoba with a Bachelor in Computer Sicence. 
                 I have worked on various projects like course registration backend system, a recipe related android app as assignments at The University.
                 Currently, I am working as a Freelancer building websites and web apps for small businesses.
                 My intrests include full stack web applications design and development using the latest technologies.
