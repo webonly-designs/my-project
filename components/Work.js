@@ -1,5 +1,5 @@
 import React from 'react'
-import { urlFor } from '../lib/Sanity'
+import { urlFor } from '../lib/sanity'
 import Link from "next/link";
 
 function Work({ works }) {
