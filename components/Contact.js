@@ -29,7 +29,7 @@ export default function Contact() {
                             </div>
                             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                                <a className="text-indigo-500 leading-relaxed">agarwal.akshay003@gmail.com</a>
+                                <p className="text-indigo-500 leading-relaxed">agarwal.akshay003@gmail.com</p>
                                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
                                 <p className="leading-relaxed">204-869-8510</p>
                         </div>

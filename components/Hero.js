@@ -15,10 +15,10 @@ function Hero() {
             <p className="mb-1 lg:mb-2 lg:text-xl text-gray-600 font-semibold">I design and build websites and web apps</p>
             <h3 className="mb-1 lg:mb-2 lg:text-xl text-gray-700 font-bold">Popular technologies</h3>
             <div className="mb-2 lg:mb-4 flex items-center justify-center lg:justify-start space-x-1">
-                <img src="/figma-icon.png" className="w-6 h-6 lg:w-8 lg:h-8" />
-                <img src="/react-icon.png" className="w-6 h-6 lg:w-8 lg:h-8" />
-                <img src="/wix-icon.png" className="w-6 h-6 lg:w-8 lg:h-8" />
-                <img src="/wordpress-icon.png" className="w-6 h-6 lg:w-8 lg:h-8" />
+                <img src="/figma-icon.png" className="w-6 h-6 lg:w-8 lg:h-8" alt="Figma icon"/>
+                <img src="/react-icon.png" className="w-6 h-6 lg:w-8 lg:h-8" alt="react icon"/>
+                <img src="/wix-icon.png" className="w-6 h-6 lg:w-8 lg:h-8" alt="wix icon"/>
+                <img src="/wordpress-icon.png" className="w-6 h-6 lg:w-8 lg:h-8" alt="wordpress icon"/>
             </div>
             <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer text-sm lg:text-lg text-gray-700 font-semibold px-4 py-2 rounded-lg shadow bg-gradient-to-r hover:from-blue-700 hover:to-purple-500 hover:text-white">🤙 Get in Touch</Link>
 
