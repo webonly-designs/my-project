@@ -5,6 +5,7 @@ import { sanityClient, urlFor } from "../../lib/sanity";
 import PortableText from "@sanity/block-content-to-react"
 import Nav from "../../components/Nav"
 import Contact from "../../components/Contact"
+import Footer from "../../components/Footer"
 const workQuery = `
   *[_type == "works" && slug.current == $slug][0]{
     _id,
@@ -74,7 +75,7 @@ export default function Work({ data }) {
           </div>
           <Contact />
       </main>
-
+      <Footer />
     </div>
   )
 }
