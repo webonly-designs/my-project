@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from "react-scroll"
 
-function Navbar() {
 
+function Navbar() {
     const [active, setActive] = useState(false);
 
     const handleClick = () => {
@@ -66,7 +66,6 @@ function Navbar() {
                     <Link to="contact" spy={true} smooth={true} offset={-100} duration={700} onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 py-2 rounded text-sm md:text-base items-center justify-center bg-gradient-to-r hover:from-blue-700 hover:to-purple-500 text-blue-600 hover:text-white'>
                         Say Hi!!
                     </Link>
-
                 </div>
 
             </div>
