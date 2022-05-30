@@ -1,11 +1,13 @@
 import emailjs from "@emailjs/browser";
 import React, { useRef } from 'react';
+import toast from "react-hot-toast";
 
 export default function Contact() {
 
     const form = useRef();
 
     function sendEmail(e) {
+        const submiting = toast.loading("Submiting...")
         e.preventDefault();
 
         emailjs.sendForm('service_ea25o9o', 'template_bf8yuas', e.target, process.env.NEXT_PUBLIC_EMAIL_USER_ID)
@@ -15,6 +17,9 @@ export default function Contact() {
                 console.log(error.text);
             });
             e.target.reset()
+        toast.success("Form Submited, Thank You.", { 
+            id: submiting
+        })
     }
 
     return(
