@@ -8,6 +8,8 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import { sanityClient } from '../lib/sanity'
 import { Toaster } from 'react-hot-toast'
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+import { useRef } from 'react';
 
 const worksQuery = `
   *[_type == "works"]{
@@ -21,6 +23,9 @@ const worksQuery = `
 
 
 export default function Home({works}) {
+
+  
+
   return (
     <div>
       <Head>
@@ -30,7 +35,13 @@ export default function Home({works}) {
       </Head>
       <Toaster />
       <Navbar />
-      <main>
+      <main className="relative">
+        <div>
+          <TawkMessengerReact
+            propertyId="629fa1ecb0d10b6f3e762e26"
+            widgetId="1g4vp117k"
+          />
+        </div>
         <Hero />
         <About />
         <Skills />
