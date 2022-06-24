@@ -10,6 +10,7 @@ import { sanityClient } from '../lib/sanity'
 import { Toaster } from 'react-hot-toast'
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 import { useRef } from 'react';
+import Testimonials from '../components/Testimonials'
 
 const worksQuery = `
   *[_type == "works"]{
@@ -47,6 +48,7 @@ export default function Home({works}) {
         <About />
         <Skills />
         <Work works={works}/>
+        <Testimonials />
         <Contact />
       </main>
       <Footer />
